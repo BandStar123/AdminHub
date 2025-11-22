@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Chat Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roblox Chat Tracker</h1>
+        <div class="webhook-form">
+            <div class="input-group">
+                <label for="webhookUrl">Discord Webhook URL:</label>
+                <input type="text" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." value="https://discord.com/api/webhooks/1441626245271130206/Eniw7C03fphMrSjHiDdwS-s1qNN8efM2IzN-ksPpBpryeigSFfJhmzTCd84YYKj0GxNs">
+            </div>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Enter message"></textarea>
+            </div>
+            <button id="sendButton">Send to Discord</button>
+            <div id="status" class="status"></div>
+        </div>
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ol>
+                <li>Make sure you have a Discord webhook URL</li>
+                <li>Enter the webhook URL above (or keep the default one)</li>
+                <li>Enter a username and message</li>
+                <li>Click "Send to Discord" to test the webhook</li>
+            </ol>
+            <p>For Roblox integration, use the provided Lua script in your Roblox game's ServerScriptService.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
