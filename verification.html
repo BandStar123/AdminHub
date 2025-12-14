@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyanoHub | verification Key System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container">
+
+    <header class="verification-header">
+        <h1>VERIFICATION</h1>
+        <p class="subtitle">Complete each step to unlock the next</p>
+    </header>
+
+    <main class="verification-main">
+
+        <section class="verification-steps">
+
+            <!-- STEP 1 -->
+            <div class="step" id="step1">
+                <div class="step-header">
+                    <div class="step-number">01</div>
+                    <h3>Subscribe</h3>
+                </div>
+
+                <p>Subscribe to our official YouTube channel.</p>
+
+                <div class="step-actions">
+                    <a href="https://www.youtube.com/@PSYCOWORLD"
+                       target="_blank"
+                       class="neon-button verify-link"
+                       data-step="1">
+                        Open YouTube
+                    </a>
+
+                    <div class="step-status" id="status1">Waiting</div>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step locked" id="step2">
+                <div class="step-header">
+                    <div class="step-number">02</div>
+                    <h3>Like Video</h3>
+                </div>
+
+                <p>Like the required YouTube video.</p>
+
+                <div class="step-actions">
+                    <a href="https://www.youtube.com/watch?v=nKYHgaB2Fks"
+                       target="_blank"
+                       class="neon-button verify-link locked"
+                       data-step="2">
+                        Watch Video
+                    </a>
+
+                    <div class="step-status" id="status2">Locked</div>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step locked" id="step3">
+                <div class="step-header">
+                    <div class="step-number">03</div>
+                    <h3>Join Discord</h3>
+                </div>
+
+                <p>Join the Discord server to continue.</p>
+
+                <div class="step-actions">
+                    <a href="https://discord.gg/gPGuhg5wKx"
+                       target="_blank"
+                       class="neon-button verify-link locked"
+                       data-step="3">
+                        Join Discord
+                    </a>
+
+                    <div class="step-status" id="status3">Locked</div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="verification-actions">
+            <button id="backToDashboard" class="neon-button secondary">
+                Back to Dashboard
+            </button>
+
+            <button id="generateKeyBtn" class="neon-button" disabled>
+                Generate Key
+            </button>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
