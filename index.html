@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Chat Tracker</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AyanoHub - Key Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="container">
-        <h1>Roblox Chat Tracker</h1>
-        <div class="webhook-form">
-            <div class="input-group">
-                <label for="webhookUrl">Discord Webhook URL:</label>
-                <input type="text" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." value="https://discord.com/api/webhooks/1441626245271130206/Eniw7C03fphMrSjHiDdwS-s1qNN8efM2IzN-ksPpBpryeigSFfJhmzTCd84YYKj0GxNs">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="IMG_0893.jpg" alt="AyanoHub Logo" class="logo-image">
+                    <div>
+                        <h1>Ayano<span>Hub</span></h1>
+                        <p class="tagline">Your Premium Key Management System</p>
+                    </div>
+                </div>
             </div>
-            <div class="input-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" placeholder="Enter username">
-            </div>
-            <div class="input-group">
-                <label for="message">Message:</label>
-                <textarea id="message" placeholder="Enter message"></textarea>
-            </div>
-            <button id="sendButton">Send to Discord</button>
-            <div id="status" class="status"></div>
+        </header>
+
+        <div class="create-key-container">
+            <a href="verification.html" class="neon-button create-key-btn">Create New Key</a>
         </div>
-        <div class="instructions">
-            <h3>How to use:</h3>
-            <ol>
-                <li>Make sure you have a Discord webhook URL</li>
-                <li>Enter the webhook URL above (or keep the default one)</li>
-                <li>Enter a username and message</li>
-                <li>Click "Send to Discord" to test the webhook</li>
-            </ol>
-            <p>For Roblox integration, use the provided Lua script in your Roblox game's ServerScriptService.</p>
-        </div>
+
+        <main class="dashboard-main">
+            <div class="keys-container" id="keysContainer">
+                <div class="no-keys" id="noKeysMessage">
+                    <h2>No keys found.</h2>
+                    <p>Create your first key to get started</p>
+                    <button id="createKeyBtn" class="neon-button">Create Key</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="notification" id="notification">Copied to clipboard!</div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
