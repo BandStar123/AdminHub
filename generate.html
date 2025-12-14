@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Key | Nexus Key System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <header class="generate-header">
+            <h1>YOUR KEY IS READY</h1>
+            <p class="subtitle">Save it somewhere safe!</p>
+        </header>
+
+        <main class="generate-main">
+            <div class="key-display" id="generatedKey">
+                <span id="keyValue">KEY-9F4A-X2KD-81QZ</span>
+                <button id="copyKeyBtn" class="neon-button copy-btn">Copy</button>
+            </div>
+
+            <div class="key-actions">
+                <button id="backToDashboardFromGen" class="neon-button secondary">Back to Dashboard</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="notification" id="notification">Copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
